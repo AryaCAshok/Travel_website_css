@@ -1,0 +1,198 @@
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-container{
+padding: 5rem 1rem;
+width:100%;
+max-width: var(--max-width);
+margin-left: 0px;
+text-align: center;
+margin-bottom: 10px;
+
+}
+
+.section-title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: dodgerblue;
+   
+    margin-bottom: 1rem;
+    margin-top: 0px;
+   text-align: center;
+}
+.section-subtitle{
+    font-size: 1rem;
+    font-style: italic;
+    color:dodgerblue ;
+    
+    margin-bottom: 5rem;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo a{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 9rem;
+}
+.nav-links{
+    display:flex; 
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+.link{
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.link:hover{
+    color: darkred;
+}
+header{
+    height: 100vh;
+    background-image: url(https://wallpaperswide.com/download/iceland_nature_travel_photography-wallpaper-1920x1080.jpg);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+header .section-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -100px;
+    gap: 1rem;
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.header-content h1{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.head{
+    margin-left:299px;
+    gap: 1rem;
+}
+/* .header-content p{
+    text-align: center;
+} */
+
+
+.header-content button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color:#669ccb;
+    color: #f3f4f6;
+    font-size:0.5rem;
+    cursor: pointer;
+    transition: 03s;
+
+}
+.header-content button:hover{
+    background-color: blue;
+}
+
+.journey-container{
+    background-color: linen;
+    /* background-image: url(https://cdn.pixabay.com/photo/2019/06/01/22/41/river-4245261_960_720.jpg); */
+}
+.journey-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+
+.country-card{
+    background-color: #f3f4f6;
+    width: 350px;
+} 
+.country-card img{
+    width: 100%;
+}
+.country-name{
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+     color: black;
+    cursor: pointer;
+}
+
+.country-name i{
+    font-size: 1.2rem;
+}
+.country-name span{
+    font-style: italic;
+} 
+#contact{
+    margin-top: 100px;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.icon i{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow, red);
+    animation: shake 1s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+}
